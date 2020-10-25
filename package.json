@@ -1,0 +1,23 @@
+{
+  "name": "create-vargas-app",
+  "version": "1.0.0",
+  "description": "Bootstrapping a new Vargas Arts Web App",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"No Test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvargas92495/create-vargas-app.git"
+  },
+  "keywords": [
+    "Next",
+    "Terraform"
+  ],
+  "author": "dvargas92495 <dvargas92495@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dvargas92495/create-vargas-app/issues"
+  },
+  "homepage": "https://github.com/dvargas92495/create-vargas-app#readme"
+}
