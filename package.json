@@ -30,17 +30,15 @@
     "url": "https://github.com/dvargas92495/create-vargas-app/issues"
   },
   "homepage": "https://github.com/dvargas92495/create-vargas-app#readme",
-  "dependencies": {
-    "@types/node": "^14.14.2",
-    "@types/rimraf": "^3.0.0",
-    "@vercel/ncc": "^0.24.1",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.0.3"
-  },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
+    "@types/node": "^14.14.2",
+    "@types/rimraf": "^3.0.0",
     "@types/validate-npm-package-name": "^3.0.0",
+    "@vercel/ncc": "^0.24.1",
     "chalk": "^4.1.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.3",
     "validate-npm-package-name": "^3.0.0"
   }
 }
