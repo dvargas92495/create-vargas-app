@@ -1,6 +1,6 @@
 {
   "name": "create-vargas-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bootstrapping a new Vargas Arts Web App",
   "main": "./dist/index.js",
   "scripts": {
