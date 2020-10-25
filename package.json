@@ -14,7 +14,7 @@
     "dist"
   ],
   "bin": {
-    "create-vargas-app": "./dist/index.js"
+    "create-vargas-app": "node ./dist/index.js"
   },
   "repository": {
     "type": "git",
