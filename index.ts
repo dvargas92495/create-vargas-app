@@ -62,13 +62,14 @@ const run = async () => {
     JSON.stringify(packageJson, null, 2) + os.EOL
   );
 
-  await sync("npm", ["install", "--save", "--save-exact"]);
+  await sync("npm install --save --save-exact");
 
   await cpy('**', root, {
     parents: true,
     cwd: path.join(__dirname, 'template'),
   })
 
+  await sync("cd", [projectName]);
   await sync("git init", { stdio: "ignore" });
   await sync("git add -A", { stdio: "ignore" });
   await sync('git commit -m "Initial commit from Create Vargas App"', {
