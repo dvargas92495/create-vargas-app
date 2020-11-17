@@ -4,11 +4,10 @@
   "description": "Bootstrapping a new Vargas Arts Web App",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "ncc build ./index.ts -w -o dist/",
-    "release": "ncc build ./index.ts -o ./dist/ --minify --no-cache --no-source-map-register",
-    "prerelease": "rimraf ./dist/",
-    "prepublishOnly": "npm run release",
-    "test": "echo \"No Test\""
+    "build": "tsc",
+    "prebuild": "rimraf ./dist/",
+    "postbuild": "copyfiles template/**/* dist",
+    "prepublishOnly": "npm run build"
   },
   "files": [
     "dist"
@@ -37,8 +36,8 @@
     "@types/node": "^14.14.2",
     "@types/rimraf": "^3.0.0",
     "@types/validate-npm-package-name": "^3.0.0",
-    "@vercel/ncc": "^0.24.1",
     "chalk": "^4.1.0",
+    "copyfiles": "^2.4.0",
     "cpy": "^8.1.1",
     "cross-spawn": "^7.0.3",
     "rimraf": "^3.0.2",
